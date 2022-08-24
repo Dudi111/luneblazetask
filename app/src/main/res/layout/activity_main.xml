@@ -7,6 +7,59 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/semilinear"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="list1 Input"
+            android:padding="20dp"
+            android:inputType="number"
+            android:background="@drawable/et_roundbg"
+
+            android:id="@+id/et_list1"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="list2 Input"
+            android:padding="20dp"
+            android:inputType="number"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/et_roundbg"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:id="@+id/et_list2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/semilinear2"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="list1 Input"
+            android:padding="20dp"
+            android:id="@+id/btn_list1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="list2 Input"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_list2"
+            />
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +82,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text=""
         android:id="@+id/tv_listmain"
         android:textSize="20sp"
         android:padding="20dp"
